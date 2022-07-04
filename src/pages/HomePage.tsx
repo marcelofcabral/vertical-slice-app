@@ -1,7 +1,7 @@
-import Banner from "../features/home/components/Banner";
+import HomeContainer from "../features/home";
 
 const HomePage: React.FC = () => {
-  return <Banner text="Nice banner bro" />
+  return <HomeContainer />
 };
 
 export default HomePage;
