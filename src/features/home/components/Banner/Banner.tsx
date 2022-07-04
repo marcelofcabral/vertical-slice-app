@@ -1,9 +1,9 @@
-import "./styles.scss";
+import styles from "./styles.module.css";
 import { BannerProps } from "./types";
 
 const Banner: React.FC<BannerProps> = ({ text }) => (
-  <div className="banner-container">
-    <h1 className="banner-text">{text}</h1>
+  <div className={styles.container}>
+    <h1 className={styles.text}>{text}</h1>
   </div>
 );
 
