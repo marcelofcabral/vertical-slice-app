@@ -1,0 +1,14 @@
+.banner-container {
+  height: 20vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $font-color;
+}

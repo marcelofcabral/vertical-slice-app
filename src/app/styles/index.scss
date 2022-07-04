@@ -1,0 +1,14 @@
+* {
+  font-size: 62.5%; // equals to 10px but allows for the font-size to scale with the browser's "zoom in/out" feature
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+$primary-color: #7dc451;
+$secondary-color: #e8a63c;
+$bg-color: #e0ffcc;
+
+$font-color: #193b05;
+$muted-font-color: #4d663e;
