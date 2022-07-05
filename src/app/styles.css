@@ -1,16 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap");
+
 * {
   font-size: 62.5%; /* // equals to 10px but allows for the font-size to scale with the browser's "zoom in/out" feature */
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Sarabun", sans-serif;
   box-sizing: border-box;
 }
 
 html {
-  --primary-color: #7dc451;
-  --secondary-color: #e8a63c;
-  --bg-color: #e0ffcc;
+  --primary-color: #1168b0;
+  --primary-color-hover: #145388;
+  --primary-color-active: #0c3252;
+  --secondary-color: #60b2f7;
+  --bg-color: #e8eaec;
 
-  --font-color: #193b05;
-  --muted-font-color: #4d663e;
+  --font-color: #04131e;
+  --muted-font-color: #c4c7ca;
 }

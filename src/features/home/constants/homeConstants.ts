@@ -1,1 +1,1 @@
-export const BANNER_TEXT = "High-quality organic fruits for an affordable price";
+export const BANNER_TEXT = "Compliance made easy.";

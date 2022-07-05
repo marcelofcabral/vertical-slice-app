@@ -1,0 +1,17 @@
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-color);
+}
+
+.container:hover,
+.container:focus {
+  background-color: var(--primary-color-hover);
+}
+
+.active {
+  background-color: var(--primary-color-active);
+}

@@ -1,4 +1,7 @@
+import React from "react";
+
 import styles from "./styles.module.css";
+
 import { BannerProps } from "./types";
 
 const Banner: React.FC<BannerProps> = ({ text }) => (

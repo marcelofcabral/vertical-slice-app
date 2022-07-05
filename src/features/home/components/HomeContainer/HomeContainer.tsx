@@ -1,10 +1,13 @@
-import { PropsWithChildren } from "react";
+import React from "react";
+
+import styles from "./styles.module.css";
 
 import { BANNER_TEXT } from "../../constants";
+
 import Banner from "../Banner";
 
-const HomeContainer: React.FC<PropsWithChildren> = ({ children }) => (
-  <section className="container">
+const HomeContainer: React.FC = () => (
+  <section className={styles.container}>
     <Banner text={BANNER_TEXT} />
   </section>
 );
