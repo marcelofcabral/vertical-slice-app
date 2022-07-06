@@ -1,3 +1,3 @@
-# Vertical Slice architecture applied to a React app
-This repo contains an example app developed using the Vertical Slice Architecture. The main goal is creating a model for what a React project structure
-based on the Vertical Slice architecture should be like. Feel free to clone this repository and use it anyway you like.
+# Ouvidor Digital's front-end app architecture & project structure
+
+This repo contains an example app developed using a feature based, Vertical Slice-inspired architecture. The main goal is creating a model for what a modern, developer-friendly React project structure should be like. This is the chosen structure for all of Ouvidor Digital's front-end applications that are based on React.
