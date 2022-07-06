@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./styles.module.css";
 
-import getClassName from "../../../shared/styling/getClassName";
+import getClassName from "../../shared/styling/getClassName";
 import { TextProps } from "./types";
 
 const Text: React.FC<TextProps> = ({ muted, bold, children }) => {

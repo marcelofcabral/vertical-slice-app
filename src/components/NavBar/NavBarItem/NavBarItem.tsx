@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 import { NavLink } from "react-router-dom";
 
 import { NavBarItemProps } from "./types";
-import SubTitle from "../../text/SubTitle/SubTitle";
+import SubTitle from "../../SubTitle/SubTitle";
 
 const NavBarItem: React.FC<NavBarItemProps> = ({ text, navigatesTo }) => {
   return (
