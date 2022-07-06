@@ -1,7 +1,8 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 
-import styles from "./styles.module.css";
+import { Text } from "./styles";
+import { SubTitleProps } from "./types";
 
-const SubTitle: React.FC<PropsWithChildren> = ({ children }) => <h2 className={styles["title-text"]}>{children}</h2>;
+const SubTitle: React.FC<SubTitleProps> = ({ children, white }) => <Text white={white}>{children}</Text>;
 
 export default SubTitle;

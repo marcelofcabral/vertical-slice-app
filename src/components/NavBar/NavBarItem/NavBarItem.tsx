@@ -1,17 +1,18 @@
 import React from "react";
 
-import styles from "./styles.module.css";
-
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { NavBarItemProps } from "./types";
 import SubTitle from "../../SubTitle/SubTitle";
+import { Container } from "../styles";
 
-const NavBarItem: React.FC<NavBarItemProps> = ({ text, navigatesTo }) => {
+const NavBarItem: React.FC<NavBarItemProps> = ({ text, navigatesTo, active }) => {
   return (
-    <NavLink className={({ isActive }) => styles.container + isActive && " " + styles.active} to={navigatesTo}>
-      <SubTitle>{text}</SubTitle>
-    </NavLink>
+    <Container>
+      <Link to={navigatesTo}>
+        <SubTitle>{text}</SubTitle>
+      </Link>
+    </Container>
   );
 };
 

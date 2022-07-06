@@ -1,15 +1,13 @@
 import React from "react";
 
-import styles from "./styles.module.css";
-
 import { BANNER_TEXT } from "../../constants";
-
 import Banner from "../Banner";
+import { Container } from "./styles";
 
 const HomeContainer: React.FC = () => (
-  <section className={styles.container}>
+  <Container>
     <Banner text={BANNER_TEXT} />
-  </section>
+  </Container>
 );
 
 export default HomeContainer;

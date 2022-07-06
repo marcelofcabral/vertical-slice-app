@@ -1,11 +1,14 @@
 import React from "react";
 
-import "./styles.css";
-
 import Routes from "./routes";
+import AppProvider from "./AppProvider";
 
 function App() {
-  return <Routes />;
+  return (
+    <AppProvider>
+      <Routes />
+    </AppProvider>
+  );
 }
 
 export default App;

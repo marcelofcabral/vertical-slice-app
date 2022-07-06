@@ -1,7 +1,8 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 
-import styles from "./styles.module.css";
+import { Text } from "./styles";
+import { TitleProps } from "./types";
 
-const Title: React.FC<PropsWithChildren> = ({ children }) => <h1 className={styles["title-text"]}>{children}</h1>;
+const Title: React.FC<TitleProps> = ({ children, white }) => <Text white={white}>{children}</Text>;
 
 export default Title;

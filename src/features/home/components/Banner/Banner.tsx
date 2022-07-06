@@ -1,14 +1,13 @@
 import React from "react";
 
-import styles from "./styles.module.css";
-
 import { BannerProps } from "./types";
+import { Container } from "./styles";
 import Title from "../../../../components/Title";
 
 const Banner: React.FC<BannerProps> = ({ text }) => (
-  <div className={styles.container}>
+  <Container>
     <Title>{text}</Title>
-  </div>
+  </Container>
 );
 
 export default Banner;
