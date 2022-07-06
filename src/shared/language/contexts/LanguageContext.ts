@@ -1,9 +1,9 @@
-import { createContext, SetStateAction } from "react";
+import { createContext, Dispatch, SetStateAction } from "react";
 
 import locales, { Locale } from "../locales";
 
-const languageContext = createContext<{ currentLocale: Locale; setCurrentLocale?: SetStateAction<Locale> }>({
+const LanguageContext = createContext<{ currentLocale: Locale; setCurrentLocale?: Dispatch<SetStateAction<Locale>> }>({
   currentLocale: locales["pt-BR"],
 });
 
-export default languageContext;
+export default LanguageContext;

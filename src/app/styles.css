@@ -18,3 +18,12 @@ html {
   --font-color: #04131e;
   --muted-font-color: #c4c7ca;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+span {
+  color: var(--font-color);
+}
