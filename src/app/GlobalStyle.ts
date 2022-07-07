@@ -3,9 +3,12 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap");
   
-  * {
-    /* equals to 10px but allows for the font-size to scale with the browser's "zoom in/out" feature */
+  html {
+    /* equals to 10px but allows for the font-size to scale with the browser's user defined font size */
     font-size: 62.5%;
+  }
+
+  * {
     padding: 0;
     margin: 0;
     font-family: "Sarabun", sans-serif;
