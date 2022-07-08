@@ -20,7 +20,9 @@ export const Container = styled.div`
 
 export const CardImage = styled.img.attrs({
   src: "https://picsum.photos/240",
-})``;
+})`
+  margin-left: 25px;
+`;
 
 export const CardHeader = styled.div`
   display: flex;
@@ -31,12 +33,21 @@ export const CardBody = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 90%;
 `;
 
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 100%;
   width: 50%;
 `;
 
 export const CardFooter = styled.div`
+  height: 2px;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
 `;

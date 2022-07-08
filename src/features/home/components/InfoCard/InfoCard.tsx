@@ -7,11 +7,10 @@ import Text from "../../../../components/Text";
 const InfoCard: React.FC = () => {
   return (
     <Container>
-      <CardHeader>
-        <SubTitle>Ouvidor Digital offers highly technological solutions for compliance-related issues.</SubTitle>
-      </CardHeader>
+      <CardHeader></CardHeader>
       <CardBody>
         <TextContainer>
+          <SubTitle>Ouvidor Digital offers highly technological solutions for compliance-related issues.</SubTitle>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

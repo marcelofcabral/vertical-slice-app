@@ -17,7 +17,6 @@ const Routes: React.FC = () => (
         </Route>
         <Route path="/order">
           <Route index element={<OrderInfoPage />} />
-          <Route path="/payment" element={<OrderPaymentPage />} />
           <Route path="/conclusion" element={<OrderConclusionPage />} />
         </Route> */}
     </RRDRoutes>

@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 
-import { Container } from "./NavBar.styles";
+import { AiFillHome } from "react-icons/ai";
+import { BsFillCartFill } from "react-icons/bs";
 
-import NavBarItem from "./NavBarItem";
+import { Container } from "./NavBar.styles";
 import useLocale from "../../shared/language/hooks/useLocale";
+
+import RegularTab from "./RegularTab";
+import SmallTab from "./SmallTab";
 
 const NavBar: React.FC = () => {
   const { currentLocale } = useLocale();
@@ -12,21 +16,23 @@ const NavBar: React.FC = () => {
 
   return (
     <Container>
-      <NavBarItem
-        onClick={() => setActiveItem(0)}
-        active={activeItem === 0}
+      <SmallTab onClick={() => setActiveItem(0)} active={activeItem === 0} navigatesTo="/" icon={AiFillHome} />
+      <SmallTab onClick={() => setActiveItem(1)} active={activeItem === 1} navigatesTo="/order" icon={BsFillCartFill} />
+      <RegularTab
+        onClick={() => setActiveItem(2)}
+        active={activeItem === 2}
         navigatesTo="/denouncement"
         text={currentLocale.DENOUNCEMENT}
       />
-      <NavBarItem
-        onClick={() => setActiveItem(1)}
-        active={activeItem === 1}
+      <RegularTab
+        onClick={() => setActiveItem(3)}
+        active={activeItem === 3}
         navigatesTo="/contactus"
         text={currentLocale.CONTACT_US}
       />
-      <NavBarItem
-        onClick={() => setActiveItem(2)}
-        active={activeItem === 2}
+      <RegularTab
+        onClick={() => setActiveItem(4)}
+        active={activeItem === 4}
         navigatesTo="/gdpr"
         text={currentLocale.GDPR}
       />
