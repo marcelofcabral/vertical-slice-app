@@ -1,7 +1,7 @@
 import React from "react";
 
-import { InternalText } from "./styles";
-import { TextProps } from "./types";
+import { InternalText } from "./Text.styles";
+import { TextProps } from "./Text.types";
 
 const Text: React.FC<TextProps> = ({ size, white, muted, bold, children }) => (
   <InternalText size={size} white={white} muted={muted} bold={bold}>

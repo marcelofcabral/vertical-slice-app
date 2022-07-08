@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Container } from "./styles";
+import { Container } from "./NavBar.styles";
 
 import NavBarItem from "./NavBarItem";
 import useLocale from "../../shared/language/hooks/useLocale";

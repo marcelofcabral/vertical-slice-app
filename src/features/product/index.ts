@@ -1,1 +1,1 @@
-export { ProductDataType } from './types';
+export { ProductDataType } from "./product.types";

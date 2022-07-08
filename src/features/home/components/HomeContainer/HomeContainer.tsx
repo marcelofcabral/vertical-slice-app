@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BANNER_TEXT } from "../../constants";
-import { Container } from "./styles";
+import { Container } from "./HomeContainer.styles";
 import Banner from "../Banner";
 import InfoCard from "../InfoCard";
 

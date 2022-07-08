@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { TextProps } from "./types";
+import { TextProps } from "./Text.types";
 
 export const InternalText = styled.p<Omit<TextProps, "children">>`
   color: ${({ theme, white, muted }) => (white && "white") || (muted && theme.colors.mutedText) || theme.colors.text};

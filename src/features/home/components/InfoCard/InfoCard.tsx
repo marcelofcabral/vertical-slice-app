@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, CardHeader, CardBody, CardFooter, CardImage, TextContainer } from "./styles";
+import { Container, CardHeader, CardBody, CardFooter, CardImage, TextContainer } from "./InfoCard.styles";
 import SubTitle from "../../../../components/SubTitle/SubTitle";
 import Text from "../../../../components/Text";
 

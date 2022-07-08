@@ -1,7 +1,7 @@
 import React from "react";
 
-import { NavBarItemProps } from "./types";
-import { LinkContainer } from "./styles";
+import { NavBarItemProps } from "./NavBarItem.types";
+import { LinkContainer } from "./NavBarItem.styles";
 import Text from "../../Text";
 
 const NavBarItem: React.FC<NavBarItemProps> = ({ text, navigatesTo, active }) => {
