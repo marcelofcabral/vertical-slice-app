@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe"
+    },
+    {
+      "id": 2,
+      "name": "Maria Meyers"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "body": "I love this solution!"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "body": "Ouvidor rocks!"
+    }
+  ]
+}
