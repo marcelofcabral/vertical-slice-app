@@ -2,6 +2,7 @@ import api, { isApiError } from "../../../services/api";
 
 import { CommentDTO } from "../../../shared/types";
 import { UserModel, CommentModel } from "../../../services/api/types";
+import getCommentDTOList from "../utils/getCommentDTOList";
 
 export const getComments = async (): Promise<CommentDTO[]> => {
   try {
@@ -10,7 +11,7 @@ export const getComments = async (): Promise<CommentDTO[]> => {
       api.get<CommentModel[]>("/comments"),
     ]);
 
-    return comments.map(({ userId, body }) => ({ userName: users[userId].name, body }));
+    return getCommentDTOList(users, comments);
   } catch (error: any) {
     if (isApiError(error)) {
       console.error(error.message);

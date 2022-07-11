@@ -4,11 +4,11 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 
 import { CommentDTO } from "../../../../shared/types";
 import { getComments } from "../../requests";
-import { Container } from "./CommentsSection.styles";
+import { Container, SectionTitle, SectionBody } from "./CommentsSection.styles";
 import Comment from "./Comment";
 
 const CommentsSection: React.FC = () => {
-  const [comments, setComments] = useState<CommentDTO[]>([]);
+  const [comments, setComments] = useState<CommentDTO[] | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -18,15 +18,18 @@ const CommentsSection: React.FC = () => {
 
   return (
     <Container>
-      {!comments.length ? (
-        <PacmanLoader />
-      ) : (
-        <>
-          {comments.map((comment) => (
-            <Comment userName={comment.userName} body={comment.body} key={comment.userName} />
-          ))}
-        </>
-      )}
+      <SectionTitle>See what users think about this solution</SectionTitle>
+      <SectionBody>
+        {!comments ? (
+          <PacmanLoader />
+        ) : (
+          <>
+            {comments.map((comment) => (
+              <Comment userName={comment.userName} body={comment.body} key={comment.userName} />
+            ))}
+          </>
+        )}
+      </SectionBody>
     </Container>
   );
 };

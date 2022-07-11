@@ -2,11 +2,19 @@
   "users": [
     {
       "id": 1,
-      "name": "John Doe"
+      "name": "Rafael Pacheco"
     },
     {
       "id": 2,
-      "name": "Maria Meyers"
+      "name": "Marcelo França"
+    },
+    {
+      "id": 3,
+      "name": "Lucas Cota"
+    },
+    {
+      "id": 4,
+      "name": "Tiago Assunção"
     }
   ],
   "comments": [
@@ -19,6 +27,16 @@
       "id": 2,
       "userId": 2,
       "body": "Ouvidor rocks!"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "body": "Managing compliance has never been so easy."
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "body": "Incredible!"
     }
   ]
 }
