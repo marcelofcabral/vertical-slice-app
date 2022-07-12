@@ -21,5 +21,6 @@ declare module "styled-components" {
       medium: string | number;
       large: string | number;
     };
+    navBarHeight: string | number;
   }
 }

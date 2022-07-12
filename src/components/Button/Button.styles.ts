@@ -18,8 +18,7 @@ export const Container = styled.button`
 
   transition: all 0.4s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: ${({ theme }) => theme.colors.primaryHover};
   }
 `;

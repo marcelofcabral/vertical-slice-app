@@ -6,9 +6,10 @@ import { LinkContainerProps } from "./NavBar.types";
 
 export const Container = styled.nav`
   position: fixed;
+  top: 0;
 
   width: 100vw;
-  height: 7vh;
+  height: ${({ theme }) => theme.navBarHeight};
   min-height: 60px;
 
   display: flex;

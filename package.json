@@ -15,11 +15,11 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
-    "start": "json-server --watch db.json --port 3001 --delay 1800 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 3001"
+    "server": "json-server --watch db.json --port 3001 --delay 2000"
   },
   "eslintConfig": {
     "extends": [

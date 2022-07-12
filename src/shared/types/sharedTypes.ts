@@ -1,5 +1,5 @@
 // existing app routes
-export type RoutePaths = "/" | "/product" | "/denouncement" | "/contactus" | "/gdpr" | "/order" | "/order/conclusion";
+export type RoutePaths = "/" | "/product" | "/denouncement" | "/contactus" | "/order" | "/order/conclusion";
 
 // existing API routes
 export type APIRoutes = "/users" | "/comments";

@@ -13,7 +13,6 @@ const Routes: React.FC = () => (
       <Route index element={<HomePage />} />
       <Route path="/denouncement" element={<DenouncementPage />} />
       {/* <Route path="/contactus" element={<ContactUsPage />} />
-          <Route path="/gdpr" element={<GDPRPage />} />
         </Route>
         <Route path="/order">
           <Route index element={<OrderInfoPage />} />

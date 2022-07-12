@@ -30,12 +30,6 @@ const NavBar: React.FC = () => {
         navigatesTo="/contactus"
         text={currentLocale.CONTACT_US}
       />
-      <RegularTab
-        onClick={() => setActiveItem(4)}
-        active={activeItem === 4}
-        navigatesTo="/gdpr"
-        text={currentLocale.GDPR}
-      />
     </Container>
   );
 };

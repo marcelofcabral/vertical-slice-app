@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: ${({ theme }) => `calc(100vh - ${theme.navBarHeight})`};
+
+  margin-top: ${({ theme }) => theme.navBarHeight};
 
   display: flex;
   flex-direction: column;

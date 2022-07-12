@@ -20,6 +20,7 @@ const appTheme: DefaultTheme = {
     medium: "2.0rem",
     large: "2.5rem",
   },
+  navBarHeight: "7vh",
 };
 
 export default appTheme;

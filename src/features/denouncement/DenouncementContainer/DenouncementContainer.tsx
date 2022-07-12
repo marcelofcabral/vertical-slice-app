@@ -8,7 +8,7 @@ const DenouncementContainer: React.FC = () => (
   <>
     <Description />
     <CommentsSection />
-    <Button text="Buy now" onClick={() => console.log("add to Redux's store")} />
+    <Button text="Buy now" onClick={() => console.log("store product in the Redux store")} />
   </>
 );
 
