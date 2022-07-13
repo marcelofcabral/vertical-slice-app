@@ -2,7 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
 
   width: 40%;
+  min-width: 575px;
+
+  @media only screen and (max-width: 720px) {
+    min-width: 0;
+    flex-direction: column;
+  }
 `;

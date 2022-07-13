@@ -10,8 +10,8 @@ export const Container = styled.div`
 
   height: 50vh;
   width: 60vw;
-  min-height: 40rem;
-  min-width: 50rem;
+  min-height: 400px;
+  min-width: 600px;
 
   border-radius: 20px;
   padding: 20px;

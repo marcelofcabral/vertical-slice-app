@@ -14,4 +14,8 @@ export const InternalText = styled.p<Omit<TextProps, "children">>`
     css`
       font-size: ${size};
     `}
+
+  @media only screen and (max-width: 720px) {
+    font-size: ${({ theme }) => theme.fontSizes.small};
+  }
 `;
