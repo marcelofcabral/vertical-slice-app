@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { selectTotalValue } from "../redux";
 import { incrementQuantity, decrementQuantity, selectQuantity } from "../../contactUs/redux";
 import { selectIsInCart, setInCart } from "../../denouncement/redux";
@@ -22,6 +24,7 @@ const OrderContainer: React.FC = () => {
   const isDenouncementInCart = useAppSelector(selectIsInCart);
   const totalValue = useAppSelector(selectTotalValue);
 
+  const navigate = useNavigate();
   const dispatch = useAppDispatch();
 
   return (
@@ -49,7 +52,7 @@ const OrderContainer: React.FC = () => {
           </TotalValueContainer>
         </OrderInfoBody>
         <FinishOrderButtonContainer>
-          <Button size="large" text="Finish order" />
+          <Button size="large" text="Finish order" onClick={() => navigate("/order/conclusion")} />
         </FinishOrderButtonContainer>
       </Container>
     </>

@@ -7,6 +7,7 @@ import HomePage from "../../pages/HomePage";
 import DenouncementPage from "../../pages/DenouncementPage";
 import ContactUsPage from "../../pages/ContactUsPage";
 import OrderInfoPage from "../../pages/OrderInfoPage";
+import OrderConclusionPage from "../../pages/OrderConclusionPage";
 import useUpdateTotalOrderValueOnChanges from "../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 
 const Routes: React.FC = () => {
@@ -21,7 +22,7 @@ const Routes: React.FC = () => {
         <Route path="/contactus" element={<ContactUsPage />} />
         <Route path="/order">
           <Route index element={<OrderInfoPage />} />
-          <Route path="order/conclusion" element={<p>Conclusion</p>} />
+          <Route path="/order/conclusion" element={<OrderConclusionPage />} />
         </Route>
       </RRDRoutes>
     </BrowserRouter>
