@@ -1,5 +1,10 @@
 import "styled-components";
 
+type ButtonDimensions = {
+  width: string | number;
+  height: string | number;
+};
+
 declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
@@ -11,6 +16,7 @@ declare module "styled-components" {
       card: string;
       text: string;
       mutedText: string;
+      disabledButton: string;
     };
     fontWeights: {
       regular: number;
@@ -20,6 +26,11 @@ declare module "styled-components" {
       small: string | number;
       medium: string | number;
       large: string | number;
+    };
+    buttonSizes: {
+      small: ButtonDimensions;
+      medium: ButtonDimensions;
+      large: ButtonDimensions;
     };
     navBarHeight: string | number;
   }

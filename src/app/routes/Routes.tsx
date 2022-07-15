@@ -6,6 +6,7 @@ import NavBar from "../../components/NavBar";
 import HomePage from "../../pages/HomePage";
 import DenouncementPage from "../../pages/DenouncementPage";
 import ContactUsPage from "../../pages/ContactUsPage";
+import OrderInfoPage from "../../pages/OrderInfoPage";
 
 const Routes: React.FC = () => (
   <BrowserRouter>
@@ -14,10 +15,10 @@ const Routes: React.FC = () => (
       <Route index element={<HomePage />} />
       <Route path="/denouncement" element={<DenouncementPage />} />
       <Route path="/contactus" element={<ContactUsPage />} />
-      {/* <Route path="/order">
+      <Route path="/order">
         <Route index element={<OrderInfoPage />} />
-        <Route path="/conclusion" element={<OrderConclusionPage />} />
-      </Route> */}
+        <Route path="order/conclusion" element={<p>Conclusion</p>} />
+      </Route>
     </RRDRoutes>
   </BrowserRouter>
 );

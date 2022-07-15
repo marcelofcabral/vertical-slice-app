@@ -1,0 +1,8 @@
+// had to break the "no one imports from app" rule here.
+
+import { useDispatch } from "react-redux";
+import type { AppDispatch } from "../../app/store";
+
+const useAppDispatch: () => AppDispatch = useDispatch;
+
+export default useAppDispatch;

@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Container = styled.button`
+import { ButtonProps } from "./Button.types";
+
+export const Container = styled.button<Pick<ButtonProps, "size">>`
   border: none;
 
   display: flex;
@@ -9,16 +11,22 @@ export const Container = styled.button`
 
   border-radius: 8px;
 
-  min-width: 14rem;
-  min-height: 6rem;
+  width: ${({ theme, size }) => theme.buttonSizes[size].width};
+  height: ${({ theme, size }) => theme.buttonSizes[size].height};
 
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.disabledButton};
 
-  cursor: pointer;
+  ${({ theme, disabled }) =>
+    !disabled &&
+    css`
+      background-color: ${theme.colors.primary};
 
-  transition: all 0.4s;
+      cursor: pointer;
 
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.primaryHover};
-  }
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: ${theme.colors.primaryHover};
+      }
+    `}
 `;
