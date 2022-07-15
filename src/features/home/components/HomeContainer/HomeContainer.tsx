@@ -4,11 +4,13 @@ import { BANNER_TEXT } from "../../constants";
 import Banner from "../Banner";
 import InfoCard from "../InfoCard";
 
-const HomeContainer: React.FC = () => (
-  <>
-    <Banner text={BANNER_TEXT} />
-    <InfoCard />
-  </>
-);
+const HomeContainer: React.FC = () => {
+  return (
+    <>
+      <Banner text={BANNER_TEXT} />
+      <InfoCard />
+    </>
+  );
+};
 
 export default HomeContainer;

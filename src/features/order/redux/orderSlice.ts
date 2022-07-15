@@ -7,7 +7,9 @@ export const orderSlice = createSlice({
     totalValue: 0,
   },
   reducers: {
-    setTotalValue: (state, action) => (state.totalValue = action.payload),
+    setTotalValue: (state, action) => {
+      state.totalValue = action.payload;
+    },
   },
 });
 
@@ -15,4 +17,4 @@ export const { setTotalValue } = orderSlice.actions;
 
 export const selectTotalValue = ({ order }: RootState) => order.totalValue;
 
-export default denouncementSlice.reducer;
+export default orderSlice.reducer;

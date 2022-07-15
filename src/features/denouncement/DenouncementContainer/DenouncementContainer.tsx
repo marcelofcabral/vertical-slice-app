@@ -1,27 +1,26 @@
 import React from "react";
 
-import { useDispatch, useSelector } from "react-redux";
-
+import useAppDispatch from "../../../shared/hooks/useAppDispatch";
+import useAppSelector from "../../../shared/hooks/useAppSelector";
 import { setInCart, selectIsInCart } from "../redux";
 import Button from "../../../components/Button";
 import CommentsSection from "../components/CommentsSection";
 import Description from "../components/Description";
 
 const DenouncementContainer: React.FC = () => {
-  const isInCart = useSelector(selectIsInCart);
+  const isInCart = useAppSelector(selectIsInCart);
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
+
+  const onButtonClick = () => {
+    dispatch(setInCart(true));
+  };
 
   return (
     <>
       <Description />
       <CommentsSection />
-      <Button
-        size="large"
-        disabled={isInCart}
-        text={isInCart ? "Added!" : "Buy now"}
-        onClick={() => dispatch(setInCart(true))}
-      />
+      <Button size="large" disabled={isInCart} text={isInCart ? "Added!" : "Buy now"} onClick={onButtonClick} />
     </>
   );
 };

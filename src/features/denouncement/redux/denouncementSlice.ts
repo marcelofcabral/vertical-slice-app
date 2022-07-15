@@ -4,11 +4,13 @@ import { RootState } from "../../../app/store";
 export const denouncementSlice = createSlice({
   name: "denouncement",
   initialState: {
-    inCart: true,
+    inCart: false,
     value: 1500,
   },
   reducers: {
-    setInCart: (state, action) => (state.inCart = action.payload),
+    setInCart: (state, action) => {
+      state.inCart = action.payload;
+    },
   },
 });
 

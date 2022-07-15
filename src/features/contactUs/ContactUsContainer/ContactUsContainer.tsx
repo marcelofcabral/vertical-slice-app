@@ -1,8 +1,8 @@
 import React, { ChangeEvent, useState } from "react";
 
-import { setEmailAddress, selectEmail, addToQuantity } from "../redux";
 import useAppDispatch from "../../../shared/hooks/useAppDispatch";
 import useAppSelector from "../../../shared/hooks/useAppSelector";
+import { setEmailAddress, selectEmail, addToQuantity } from "../redux";
 import { EmailCTAContainer, QuantityContainer } from "./ContactUsContainer.styles";
 import Button from "../../../components/Button";
 import SubTitle from "../../../components/SubTitle/SubTitle";
@@ -22,7 +22,7 @@ const ContactUsContainer: React.FC = () => {
     dispatch(setEmailAddress(e.currentTarget.value));
   };
 
-  const onButtonClick = () => {
+  const onAddToCart = () => {
     dispatch(addToQuantity(quantity));
     setQuantity(0);
     setShowAddedText(true);
@@ -45,9 +45,9 @@ const ContactUsContainer: React.FC = () => {
       </QuantityContainer>
       <Button
         size="large"
-        disabled={!emailAddress || showAddedText}
+        disabled={!emailAddress || showAddedText || quantity === 0}
         text={showAddedText ? "Added!" : "Add to cart"}
-        onClick={onButtonClick}
+        onClick={onAddToCart}
       />
     </>
   );
