@@ -6,8 +6,11 @@ import { setInCart, selectIsInCart } from "../redux";
 import Button from "../../../components/Button";
 import CommentsSection from "../components/CommentsSection";
 import Description from "../components/Description";
+import useUpdateTotalOrderValueOnChanges from "../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 
 const DenouncementContainer: React.FC = () => {
+  useUpdateTotalOrderValueOnChanges();
+
   const isInCart = useAppSelector(selectIsInCart);
 
   const dispatch = useAppDispatch();

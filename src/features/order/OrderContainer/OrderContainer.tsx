@@ -7,6 +7,7 @@ import { incrementQuantity, decrementQuantity, selectQuantity } from "../../cont
 import { selectIsInCart, setInCart } from "../../denouncement/redux";
 import useAppDispatch from "../../../shared/hooks/useAppDispatch";
 import useAppSelector from "../../../shared/hooks/useAppSelector";
+import useUpdateTotalOrderValueOnChanges from "../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 import {
   Container,
   OrderInfoBody,
@@ -20,6 +21,8 @@ import Text from "../../../components/Text";
 import Button from "../../../components/Button";
 
 const OrderContainer: React.FC = () => {
+  useUpdateTotalOrderValueOnChanges();
+
   const contactUsQuantity = useAppSelector(selectQuantity);
   const isDenouncementInCart = useAppSelector(selectIsInCart);
   const totalValue = useAppSelector(selectTotalValue);

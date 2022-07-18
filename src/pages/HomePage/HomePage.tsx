@@ -1,7 +1,7 @@
 import React from "react";
 
-import PageContainer from "../components/PageContainer/PageContainer";
-import HomeContainer from "../features/home";
+import PageContainer from "../../components/PageContainer/PageContainer";
+import HomeContainer from "../../features/home";
 
 const HomePage: React.FC = () => (
   <PageContainer>

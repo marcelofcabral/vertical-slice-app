@@ -8,15 +8,13 @@ import store from "../store";
 import GlobalStyle from "../styles/GlobalStyle";
 import { LocaleProvider } from "../../shared/language/hooks/useLocale";
 
-const AppProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <LocaleProvider>
-        <ReactReduxProvider store={store}>{children}</ReactReduxProvider>
-      </LocaleProvider>
-    </ThemeProvider>
-  );
-};
+const AppProvider: React.FC<PropsWithChildren> = ({ children }) => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <LocaleProvider>
+      <ReactReduxProvider store={store}>{children}</ReactReduxProvider>
+    </LocaleProvider>
+  </ThemeProvider>
+);
 
 export default AppProvider;

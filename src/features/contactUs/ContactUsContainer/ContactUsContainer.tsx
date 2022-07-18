@@ -9,8 +9,11 @@ import SubTitle from "../../../components/SubTitle/SubTitle";
 import Text from "../../../components/Text";
 import Input from "../components/Input";
 import UsageStatistics from "../components/UsageStatistics/UsageStatistics";
+import useUpdateTotalOrderValueOnChanges from "../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 
 const ContactUsContainer: React.FC = () => {
+  useUpdateTotalOrderValueOnChanges();
+
   const emailAddress = useAppSelector(selectEmail);
 
   const [showAddedText, setShowAddedText] = useState(false);
