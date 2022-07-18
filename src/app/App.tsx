@@ -1,7 +1,7 @@
 import React from "react";
 
 import Routes from "./routes";
-import AppProvider from "./components/AppProvider";
+import AppProvider from "./AppProvider";
 
 function App() {
   return (
