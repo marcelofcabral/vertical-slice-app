@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container } from "./Logo.styles";
-import logo from "./assets/logo.png";
+import logo from "./images/logo.png";
 
 const Logo: React.FC = () => (
   <Container>
