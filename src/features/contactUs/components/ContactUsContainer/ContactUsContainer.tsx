@@ -1,15 +1,15 @@
 import React, { ChangeEvent, useState } from "react";
 
-import useAppDispatch from "../../../shared/hooks/useAppDispatch";
-import useAppSelector from "../../../shared/hooks/useAppSelector";
-import { setEmailAddress, selectEmail, addToQuantity } from "../redux";
+import useAppDispatch from "../../../../shared/hooks/useAppDispatch";
+import useAppSelector from "../../../../shared/hooks/useAppSelector";
+import { setEmailAddress, selectEmail, addToQuantity } from "../../redux";
 import { EmailCTAContainer, QuantityContainer } from "./ContactUsContainer.styles";
-import Button from "../../../components/Button";
-import SubTitle from "../../../components/SubTitle/SubTitle";
-import Text from "../../../components/Text";
-import Input from "../components/Input";
-import UsageStatistics from "../components/UsageStatistics/UsageStatistics";
-import useUpdateTotalOrderValueOnChanges from "../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
+import Button from "../../../../components/Button";
+import SubTitle from "../../../../components/SubTitle/SubTitle";
+import Text from "../../../../components/Text";
+import Input from "../Input";
+import UsageStatistics from "../UsageStatistics/UsageStatistics";
+import useUpdateTotalOrderValueOnChanges from "../../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 
 const ContactUsContainer: React.FC = () => {
   useUpdateTotalOrderValueOnChanges();

@@ -2,12 +2,12 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { selectTotalValue } from "../redux";
-import { incrementQuantity, decrementQuantity, selectQuantity } from "../../contactUs/redux";
-import { selectIsInCart, setInCart } from "../../denouncement/redux";
-import useAppDispatch from "../../../shared/hooks/useAppDispatch";
-import useAppSelector from "../../../shared/hooks/useAppSelector";
-import useUpdateTotalOrderValueOnChanges from "../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
+import { selectTotalValue } from "../../redux";
+import { incrementQuantity, decrementQuantity, selectQuantity } from "../../../contactUs/redux";
+import { selectIsInCart, setInCart } from "../../../denouncement/redux";
+import useAppDispatch from "../../../../shared/hooks/useAppDispatch";
+import useAppSelector from "../../../../shared/hooks/useAppSelector";
+import useUpdateTotalOrderValueOnChanges from "../../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 import {
   Container,
   OrderInfoBody,
@@ -15,10 +15,10 @@ import {
   TotalValueContainer,
   FinishOrderButtonContainer,
 } from "./OrderContainer.styles";
-import Title from "../../../components/Title";
-import SubTitle from "../../../components/SubTitle/SubTitle";
-import Text from "../../../components/Text";
-import Button from "../../../components/Button";
+import Title from "../../../../components/Title";
+import SubTitle from "../../../../components/SubTitle/SubTitle";
+import Text from "../../../../components/Text";
+import Button from "../../../../components/Button";
 
 const OrderContainer: React.FC = () => {
   useUpdateTotalOrderValueOnChanges();

@@ -1,2 +1,2 @@
-import ContactUsContainer from "./ContactUsContainer";
+import ContactUsContainer from "./components/ContactUsContainer";
 export default ContactUsContainer;

@@ -1,12 +1,12 @@
 import React from "react";
 
-import useAppDispatch from "../../../shared/hooks/useAppDispatch";
-import useAppSelector from "../../../shared/hooks/useAppSelector";
-import { setInCart, selectIsInCart } from "../redux";
-import Button from "../../../components/Button";
-import CommentsSection from "../components/CommentsSection";
-import Description from "../components/Description";
-import useUpdateTotalOrderValueOnChanges from "../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
+import useAppDispatch from "../../../../shared/hooks/useAppDispatch";
+import useAppSelector from "../../../../shared/hooks/useAppSelector";
+import { setInCart, selectIsInCart } from "../../redux";
+import Button from "../../../../components/Button";
+import CommentsSection from "../CommentsSection";
+import Description from "../Description";
+import useUpdateTotalOrderValueOnChanges from "../../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
 
 const DenouncementContainer: React.FC = () => {
   useUpdateTotalOrderValueOnChanges();
