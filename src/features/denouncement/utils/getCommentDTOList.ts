@@ -1,5 +1,5 @@
 import { CommentModel, UserModel } from "../../../services/api/types";
-import { CommentDTO } from "../../../shared/types";
+import { CommentDTO } from "../../../shared/dataTransfer/types";
 
 const getCommentDTOList = (users: UserModel[], comments: CommentModel[]): CommentDTO[] => {
   comments.sort((commentA, commentB) => commentA.userId - commentB.userId);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import PacmanLoader from "react-spinners/PacmanLoader";
 
-import { CommentDTO } from "../../../../shared/types";
+import { CommentDTO } from "../../../../shared/dataTransfer/types";
 import { getComments } from "../../requests";
 import { Container, SectionTitle, SectionBody } from "./CommentsSection.styles";
 import Comment from "./Comment";

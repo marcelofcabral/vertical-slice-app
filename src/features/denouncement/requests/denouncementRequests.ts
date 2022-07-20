@@ -1,5 +1,5 @@
 import api, { isApiError } from "../../../services/api";
-import { CommentDTO } from "../../../shared/types";
+import { CommentDTO } from "../../../shared/dataTransfer/types";
 import { UserModel, CommentModel } from "../../../services/api/types";
 import getCommentDTOList from "../utils/getCommentDTOList";
 
