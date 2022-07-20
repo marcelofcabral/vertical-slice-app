@@ -1,9 +1,10 @@
+import { useEffect } from "react";
+
 import useAppSelector from "../../redux/hooks/useAppSelector";
 import useAppDispatch from "../../redux/hooks/useAppDispatch";
 import { selectQuantity, selectValue as selectContactUsValue } from "../../../features/contactUs/redux";
 import { selectIsInCart, selectValue as selectDenouncementValue } from "../../../features/denouncement/redux";
 import { setTotalValue } from "../../../features/order/redux";
-import { useEffect } from "react";
 
 const useUpdateTotalOrderValueOnChanges = () => {
   const dispatch = useAppDispatch();
