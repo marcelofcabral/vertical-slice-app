@@ -9,3 +9,6 @@ export type CommentModel = {
   userId: number;
   body: string;
 };
+
+// existing API routes
+export type APIRoutes = "/users" | "/comments";

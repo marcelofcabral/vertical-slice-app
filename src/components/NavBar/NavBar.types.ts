@@ -1,4 +1,4 @@
-import { RoutePaths } from "../../shared/types";
+import { RoutePaths } from "../../shared/routing/types";
 
 export type LinkContainerProps = {
   active: boolean;

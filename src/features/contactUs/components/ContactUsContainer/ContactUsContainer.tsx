@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useState } from "react";
 
-import useAppDispatch from "../../../../shared/hooks/useAppDispatch";
-import useAppSelector from "../../../../shared/hooks/useAppSelector";
+import useAppDispatch from "../../../../shared/redux/hooks/useAppDispatch";
+import useAppSelector from "../../../../shared/redux/hooks/useAppSelector";
 import { setEmailAddress, selectEmail, addToQuantity } from "../../redux";
 import { EmailCTAContainer, QuantityContainer } from "./ContactUsContainer.styles";
 import Button from "../../../../components/Button";
@@ -9,7 +9,7 @@ import SubTitle from "../../../../components/SubTitle/SubTitle";
 import Text from "../../../../components/Text";
 import Input from "../Input";
 import UsageStatistics from "../UsageStatistics/UsageStatistics";
-import useUpdateTotalOrderValueOnChanges from "../../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
+import useUpdateTotalOrderValueOnChanges from "../../../../shared/dataUpdate/hooks/useUpdateTotalOrderValueOnChanges";
 
 const ContactUsContainer: React.FC = () => {
   useUpdateTotalOrderValueOnChanges();

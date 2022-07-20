@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { selectTotalValue } from "../../redux";
 import { incrementQuantity, decrementQuantity, selectQuantity } from "../../../contactUs/redux";
 import { selectIsInCart, setInCart } from "../../../denouncement/redux";
-import useAppDispatch from "../../../../shared/hooks/useAppDispatch";
-import useAppSelector from "../../../../shared/hooks/useAppSelector";
-import useUpdateTotalOrderValueOnChanges from "../../../../shared/hooks/useUpdateTotalOrderValueOnChanges";
+import useAppDispatch from "../../../../shared/redux/hooks/useAppDispatch";
+import useAppSelector from "../../../../shared/redux/hooks/useAppSelector";
+import useUpdateTotalOrderValueOnChanges from "../../../../shared/dataUpdate/hooks/useUpdateTotalOrderValueOnChanges";
 import {
   Container,
   OrderInfoBody,
